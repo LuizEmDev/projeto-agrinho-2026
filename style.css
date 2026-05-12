@@ -1,0 +1,153 @@
+:root {
+  --green-1: #1f5f2d;
+  --green-2: #2f8a46;
+  --green-3: #dff4df;
+  --earth: #8a5a2b;
+  --bg: #f7fbf6;
+  --text: #1b2a1f;
+  --card: #ffffff;
+  --danger: #b3261e;
+  --ok: #1f7a34;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #eaf7ea 0%, var(--bg) 45%);
+  color: var(--text);
+}
+
+.topbar {
+  text-align: center;
+  background: linear-gradient(120deg, var(--green-1), var(--green-2));
+  color: white;
+  padding: 1.2rem;
+}
+
+.topbar h1 { margin: 0; }
+.topbar p { margin: 0.3rem 0 0; }
+
+.app {
+  max-width: 1050px;
+  margin: 1.2rem auto;
+  padding: 0 1rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.mascot-card,
+.quiz-card,
+.content-grid article {
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(16, 47, 22, 0.08);
+}
+
+.mascot-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-left: 8px solid var(--earth);
+}
+
+.mascot-avatar {
+  font-size: 4rem;
+  display: grid;
+  place-items: center;
+  background: var(--green-3);
+  border-radius: 12px;
+}
+
+.mascot-dialogue h2 { margin-top: 0; }
+
+.progress-wrap {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+progress {
+  width: 100%;
+  height: 16px;
+}
+
+.quiz-card { padding: 1rem; }
+
+.answers {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+.answer-btn,
+#nextBtn {
+  border: 1px solid #cfd9cf;
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.97rem;
+}
+
+.answer-btn:hover,
+#nextBtn:hover:enabled {
+  border-color: var(--green-2);
+}
+
+.answer-btn.correct {
+  border-color: var(--ok);
+  background: #ebf9ef;
+}
+
+.answer-btn.wrong {
+  border-color: var(--danger);
+  background: #fdecea;
+}
+
+.feedback {
+  min-height: 1.5em;
+  font-weight: 600;
+}
+
+#nextBtn {
+  background: var(--green-2);
+  color: white;
+  border: none;
+}
+
+#nextBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.content-grid article {
+  padding: 1rem;
+  border-top: 5px solid var(--green-2);
+}
+
+.content-grid.locked {
+  pointer-events: none;
+  filter: blur(2px) grayscale(0.6);
+  user-select: none;
+  opacity: 0.7;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #415341;
+}
+
+@media (max-width: 700px) {
+  .mascot-card { grid-template-columns: 1fr; }
+}
