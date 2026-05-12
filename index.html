@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agro forte, futuro sustentável</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>🌱 Agro forte, futuro sustentável</h1>
+    <p>Equilíbrio entre produção e meio ambiente</p>
+  </header>
+
+  <main class="app">
+    <section class="mascot-card" aria-live="polite">
+      <div class="mascot-avatar" role="img" aria-label="Mascote fazendeiro">
+        👨‍🌾
+      </div>
+      <div class="mascot-dialogue">
+        <h2>Guia do Fazendeiro João</h2>
+        <p id="dialogueText">Carregando o passeio...</p>
+        <div class="progress-wrap">
+          <label for="tourProgress">Progresso do passeio</label>
+          <progress id="tourProgress" max="100" value="0">0%</progress>
+          <span id="progressText">0%</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-card" id="quizCard">
+      <h3>Pergunta do percurso</h3>
+      <p id="questionText">Aguarde a pergunta do mascote.</p>
+      <div id="answers" class="answers"></div>
+      <p id="feedback" class="feedback"></p>
+      <button id="nextBtn" disabled>Próximo passo</button>
+    </section>
+
+    <section class="content-grid locked" id="contentGrid" aria-disabled="true">
+      <article>
+        <h3>🌾 Produção eficiente</h3>
+        <p>Uso de tecnologias, análise de solo e manejo inteligente para produzir mais com menos desperdício.</p>
+      </article>
+      <article>
+        <h3>💧 Conservação de recursos</h3>
+        <p>Irrigação racional, proteção de nascentes e redução de perdas de água em toda a cadeia produtiva.</p>
+      </article>
+      <article>
+        <h3>🐝 Biodiversidade</h3>
+        <p>Integração lavoura-pecuária-floresta e corredores ecológicos para preservar espécies e polinizadores.</p>
+      </article>
+      <article>
+        <h3>♻️ Economia circular</h3>
+        <p>Reaproveitamento de resíduos orgânicos, compostagem e geração de bioenergia na propriedade rural.</p>
+      </article>
+      <article>
+        <h3>🤝 Comunidade e futuro</h3>
+        <p>Formação técnica, inclusão social e valorização do trabalho no campo para um futuro mais sustentável.</p>
+      </article>
+      <article>
+        <h3>📊 Indicadores sustentáveis</h3>
+        <p>Medição de emissões, produtividade e qualidade do solo para orientar decisões de longo prazo.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Missão: aprender, responder e desbloquear o modo livre de navegação.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
