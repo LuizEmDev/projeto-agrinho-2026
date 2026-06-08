@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Relatório final baseado nas escolhas do usuário.">
+  <title>Resultado | Agro forte, futuro sustentável</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-pagina="resultado" data-etapa="7">
+  <a class="atalho-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo-aplicacao">
+    <a class="nome-projeto" href="index.html">Agro forte, futuro sustentável</a>
+    <div class="marcador-etapa" aria-label="Etapa atual">
+      <span>07/08</span>
+      <strong>Relatório</strong>
+    </div>
+    <div class="acessibilidade" aria-label="Controles de acessibilidade">
+      <button type="button" id="botaoTema" aria-pressed="false">Contraste</button>
+      <button type="button" id="botaoFonteMenor" aria-label="Diminuir fonte">A-</button>
+      <button type="button" id="botaoFonteMaior" aria-label="Aumentar fonte">A+</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="quadro-app" tabindex="-1">
+    <!-- Resultado: relatório sem medalhas ou recompensa infantil. -->
+    <section class="tela-app resultado">
+      <header class="cabeca-tela compacto">
+        <p class="rotulo-tela">relatório final</p>
+        <h1 id="perfilResultado">Relatório em construção</h1>
+        <p id="textoResultado"></p>
+        <div class="indicadores-compactos" aria-label="Indicadores simulados">
+          <p><span>Água</span><strong id="resultadoAgua">-</strong></p>
+          <p><span>Solo</span><strong id="resultadoSolo">-</strong></p>
+          <p><span>Energia</span><strong id="resultadoEnergia">-</strong></p>
+          <p><span>Quiz</span><strong id="resultadoQuiz">-</strong></p>
+        </div>
+      </header>
+
+      <div class="relatorio-mosaico">
+        <article class="analise-principal">
+          <h2>Análise</h2>
+          <p id="analiseResultado"></p>
+        </article>
+        <article>
+          <h2>Pontos fortes</h2>
+          <ul id="pontosFortesResultado"></ul>
+        </article>
+        <article>
+          <h2>Pontos fracos</h2>
+          <ul id="pontosFracosResultado"></ul>
+        </article>
+        <article>
+          <h2>Recomendações</h2>
+          <ul id="recomendacoesResultado"></ul>
+        </article>
+      </div>
+
+      <footer class="acoes-tela">
+        <button type="button" id="reiniciarPercurso">Reiniciar</button>
+        <a class="botao-primario" href="conclusao.html">Concluir</a>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

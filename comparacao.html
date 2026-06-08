@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comparação entre cenário desequilibrado e sustentável.">
+  <title>Comparação | Agro forte, futuro sustentável</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-pagina="comparacao" data-etapa="5">
+  <a class="atalho-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo-aplicacao">
+    <a class="nome-projeto" href="index.html">Agro forte, futuro sustentável</a>
+    <div class="marcador-etapa" aria-label="Etapa atual">
+      <span>05/08</span>
+      <strong>Comparação</strong>
+    </div>
+    <div class="acessibilidade" aria-label="Controles de acessibilidade">
+      <button type="button" id="botaoTema" aria-pressed="false">Contraste</button>
+      <button type="button" id="botaoFonteMenor" aria-label="Diminuir fonte">A-</button>
+      <button type="button" id="botaoFonteMaior" aria-label="Aumentar fonte">A+</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="quadro-app" tabindex="-1">
+    <!-- Comparação: dois cenários em tela única. -->
+    <section class="tela-app comparacao">
+      <header class="cabeca-tela compacto">
+        <p class="rotulo-tela">cenários</p>
+        <h1>Dois caminhos para a mesma propriedade.</h1>
+      </header>
+
+      <div class="duelo-cenarios">
+        <article class="cenario cenario-risco">
+          <h2>Desequilibrado</h2>
+          <dl>
+            <div><dt>Água</dt><dd>uso por hábito</dd></div>
+            <div><dt>Solo</dt><dd>proteção irregular</dd></div>
+            <div><dt>Decisão</dt><dd>ação tardia</dd></div>
+            <div><dt>Resultado</dt><dd>mais perda acumulada</dd></div>
+          </dl>
+        </article>
+
+        <article class="cenario cenario-sustentavel">
+          <h2>Sustentável</h2>
+          <dl>
+            <div><dt>Água</dt><dd>uso medido</dd></div>
+            <div><dt>Solo</dt><dd>base protegida</dd></div>
+            <div><dt>Decisão</dt><dd>dados e observação</dd></div>
+            <div><dt>Resultado</dt><dd>produção mais estável</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <aside class="posicao-percurso">
+        <p id="textoComparacao"></p>
+        <ul id="listaComparacao"></ul>
+      </aside>
+
+      <footer class="acoes-tela">
+        <a href="impactos.html">Voltar</a>
+        <a class="botao-primario" href="quiz.html">Responder quiz</a>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

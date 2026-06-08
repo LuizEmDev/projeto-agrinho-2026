@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Análise interativa dos recursos da propriedade.">
+  <title>Diagnóstico | Agro forte, futuro sustentável</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-pagina="diagnostico" data-etapa="2">
+  <a class="atalho-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo-aplicacao">
+    <a class="nome-projeto" href="index.html">Agro forte, futuro sustentável</a>
+    <div class="marcador-etapa" aria-label="Etapa atual">
+      <span>02/08</span>
+      <strong>Diagnóstico</strong>
+    </div>
+    <div class="acessibilidade" aria-label="Controles de acessibilidade">
+      <button type="button" id="botaoTema" aria-pressed="false">Contraste</button>
+      <button type="button" id="botaoFonteMenor" aria-label="Diminuir fonte">A-</button>
+      <button type="button" id="botaoFonteMaior" aria-label="Aumentar fonte">A+</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="quadro-app" tabindex="-1">
+    <!-- Diagnóstico: cada recurso abre uma leitura prática da propriedade. -->
+    <section class="tela-app diagnostico">
+      <header class="cabeca-tela">
+        <p class="rotulo-tela">análise da propriedade</p>
+        <h1>Abra cada recurso e observe onde a produção começa a pressionar o ambiente.</h1>
+      </header>
+
+      <div class="mesa-diagnostico">
+        <nav class="lista-recursos" aria-label="Recursos para diagnóstico">
+          <button class="item-diagnostico" type="button" data-recurso="agua">
+            <span>Água</span>
+            <strong>uso precisa ser medido</strong>
+          </button>
+          <button class="item-diagnostico" type="button" data-recurso="solo">
+            <span>Solo</span>
+            <strong>base produtiva em risco</strong>
+          </button>
+          <button class="item-diagnostico" type="button" data-recurso="energia">
+            <span>Energia</span>
+            <strong>custo e impacto acumulam</strong>
+          </button>
+          <button class="item-diagnostico" type="button" data-recurso="biodiversidade">
+            <span>Biodiversidade</span>
+            <strong>equilíbrio natural reduzido</strong>
+          </button>
+          <button class="item-diagnostico" type="button" data-recurso="producao">
+            <span>Produção</span>
+            <strong>ganho depende de continuidade</strong>
+          </button>
+        </nav>
+
+        <article class="leitura-diagnostico ficha-recurso" aria-live="polite">
+          <span id="contadorDiagnostico">Nenhum recurso aberto</span>
+          <h2 id="tituloDiagnostico">Escolha um recurso para iniciar a análise.</h2>
+          <p id="textoDiagnostico">
+            O diagnóstico não é uma lista de respostas prontas. Abra água, solo, energia,
+            biodiversidade e produção para entender como cada ponto interfere no equilíbrio da propriedade.
+          </p>
+
+          <div class="detalhes-diagnostico" id="detalhesDiagnostico" hidden>
+            <section>
+              <h3>Sinais observáveis</h3>
+              <ul id="sinaisDiagnostico"></ul>
+            </section>
+            <section>
+              <h3>Se for ignorado</h3>
+              <p id="consequenciaDiagnostico"></p>
+            </section>
+          </div>
+        </article>
+
+        <aside class="registro-diagnostico" aria-label="Registro do diagnóstico">
+          <strong>Registro da análise</strong>
+          <p id="resumoDiagnostico">Abra os cinco recursos para liberar a próxima etapa.</p>
+          <div class="marcas-diagnostico" id="marcasDiagnostico"></div>
+        </aside>
+      </div>
+
+      <footer class="acoes-tela">
+        <a href="index.html">Voltar</a>
+        <a class="botao-primario bloqueado" id="avancarDiagnostico" href="decisoes.html" aria-disabled="true">Explorar todos os pontos</a>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

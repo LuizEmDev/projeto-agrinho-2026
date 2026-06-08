@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experiência interativa sobre produção agropecuária, tecnologia e preservação ambiental.">
   <title>Agro forte, futuro sustentável</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <header class="topbar">
-    <h1>🌱 Agro forte, futuro sustentável</h1>
-    <p>Equilíbrio entre produção e meio ambiente</p>
+<body data-pagina="inicio" data-etapa="1">
+  <a class="atalho-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- Topo compacto: identidade, etapa atual e acessibilidade discreta. -->
+  <header class="topo-aplicacao">
+    <a class="nome-projeto" href="index.html">Agro forte, futuro sustentável</a>
+    <div class="marcador-etapa" aria-label="Etapa atual">
+      <span>01/08</span>
+      <strong>Entrada</strong>
+    </div>
+    <div class="acessibilidade" aria-label="Controles de acessibilidade">
+      <button type="button" id="botaoTema" aria-pressed="false">Contraste</button>
+      <button type="button" id="botaoFonteMenor" aria-label="Diminuir fonte">A-</button>
+      <button type="button" id="botaoFonteMaior" aria-label="Aumentar fonte">A+</button>
+    </div>
   </header>
 
-  <main class="app">
-    <section class="mascot-card" aria-live="polite">
-      <div class="mascot-avatar" role="img" aria-label="Mascote fazendeiro">
-        👨‍🌾
+  <main id="conteudo" class="quadro-app" tabindex="-1">
+    <!-- Tela inicial: entrada curta da experiência, sem hero tradicional ou menu de seções. -->
+    <section class="tela-app entrada">
+      <div class="bloco-entrada">
+        <p class="rotulo-tela">pergunta central</p>
+        <h1>Como aumentar a produção sem comprometer os recursos naturais?</h1>
+        <p>
+          Nesta experiência, você acompanha uma propriedade simulada, identifica pressões
+          sobre os recursos naturais e decide como produzir com mais controle.
+        </p>
       </div>
-      <div class="mascot-dialogue">
-        <h2>Guia do Fazendeiro João</h2>
-        <p id="dialogueText">Carregando o passeio...</p>
-        <div class="progress-wrap">
-          <label for="tourProgress">Progresso do passeio</label>
-          <progress id="tourProgress" max="100" value="0">0%</progress>
-          <span id="progressText">0%</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="quiz-card" id="quizCard">
-      <h3>Pergunta do percurso</h3>
-      <p id="questionText">Aguarde a pergunta do mascote.</p>
-      <div id="answers" class="answers"></div>
-      <p id="feedback" class="feedback"></p>
-      <button id="nextBtn" disabled>Próximo passo</button>
-    </section>
+      <aside class="termo-jornada" aria-label="Como a jornada será analisada">
+        <h2>Antes de começar</h2>
+        <ol>
+          <li>
+            <strong>Observe o diagnóstico</strong>
+            <span>cada recurso mostra sinais, riscos e relação com a produção.</span>
+          </li>
+          <li>
+            <strong>Escolha um manejo</strong>
+            <span>as decisões ficam salvas e influenciam as consequências.</span>
+          </li>
+          <li>
+            <strong>Leia o relatório</strong>
+            <span>o final aponta pontos fortes, fragilidades e recomendações.</span>
+          </li>
+        </ol>
+        <p>
+          O objetivo não é premiar uma resposta pronta. O percurso mostra como pequenas
+          escolhas podem reduzir desperdícios e tornar a produção mais estável.
+        </p>
+      </aside>
 
-    <section class="content-grid locked" id="contentGrid" aria-disabled="true">
-      <article>
-        <h3>🌾 Produção eficiente</h3>
-        <p>Uso de tecnologias, análise de solo e manejo inteligente para produzir mais com menos desperdício.</p>
-      </article>
-      <article>
-        <h3>💧 Conservação de recursos</h3>
-        <p>Irrigação racional, proteção de nascentes e redução de perdas de água em toda a cadeia produtiva.</p>
-      </article>
-      <article>
-        <h3>🐝 Biodiversidade</h3>
-        <p>Integração lavoura-pecuária-floresta e corredores ecológicos para preservar espécies e polinizadores.</p>
-      </article>
-      <article>
-        <h3>♻️ Economia circular</h3>
-        <p>Reaproveitamento de resíduos orgânicos, compostagem e geração de bioenergia na propriedade rural.</p>
-      </article>
-      <article>
-        <h3>🤝 Comunidade e futuro</h3>
-        <p>Formação técnica, inclusão social e valorização do trabalho no campo para um futuro mais sustentável.</p>
-      </article>
-      <article>
-        <h3>📊 Indicadores sustentáveis</h3>
-        <p>Medição de emissões, produtividade e qualidade do solo para orientar decisões de longo prazo.</p>
-      </article>
+      <footer class="acoes-tela">
+        <span class="dica-tela">Avance somente quando estiver pronto para analisar o primeiro recurso.</span>
+        <a class="botao-primario" href="diagnostico.html">Iniciar jornada</a>
+      </footer>
     </section>
   </main>
-
-  <footer>
-    <p>Missão: aprender, responder e desbloquear o modo livre de navegação.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
