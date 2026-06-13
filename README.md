@@ -115,13 +115,6 @@ Referências conceituais:
 - Programa Agrinho - Sistema FAEP/SENAR-PR;
 - materiais públicos da Embrapa sobre plantio direto, conservação do solo, uso racional da água, integração produtiva e agricultura de precisão.
 
-## Uso de IA
-
-Houve apoio de IA para planejamento, revisão de linguagem, organização das telas, criação da lógica JavaScript e melhoria da identidade visual.
-
-Prompt resumido utilizado:
-
-> Refazer o projeto como uma experiência educativa guiada para o tema “Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente”, usando apenas HTML, CSS e JavaScript puro. Remover aparência de landing page, hero tradicional, navbar grande e dashboard. Criar telas curtas com diagnóstico clicável, decisões por etapa, impactos, comparação, quiz, relatório e conclusão.
 
 ## Como usar
 
